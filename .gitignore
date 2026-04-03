@@ -1,0 +1,59 @@
+# Expo
+expo-env.d.ts
+.expo/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+web-build/
+
+# Environment files (never upload!)
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+
+# API keys & secrets
+*.secret
+secrets.json
+credentials.json
+
+# IDE & editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Audio recordings (user data)
+recordings/
+audio/
+*.mp3
+*.m4a
+*.wav
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3

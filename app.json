@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "LoveSync",
+    "slug": "lovesync",
+    "version": "1.6.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/icon.png",
+      "backgroundColor": "#0A0A0C"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.lovesync.app",
+      "icon": "./assets/icon.png",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "LoveSync 需要麦克风权限来录制你们的对话并进行AI分析。",
+        "NSPhotoLibraryUsageDescription": "LoveSync 需要访问你的相册来设置头像。",
+        "NSCameraUsageDescription": "LoveSync 需要访问相机来拍摄头像。"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0A0A0C"
+      },
+      "package": "com.lovesync.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "LoveSync 需要麦克风权限来录制你们的对话并进行AI分析。"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "LoveSync 需要访问你的相册来设置头像。",
+          "cameraPermission": "LoveSync 需要访问相机来拍摄头像。"
+        }
+      ]
+    ],
+    "scheme": "lovesync",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "icon": "./assets/icon.png",
+    "sdkVersion": "54.0.0"
+  }
+}
